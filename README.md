@@ -9,7 +9,7 @@ youtube_subscription_transfer is a python program for subscription exporting and
 Instructions for installing these packages can be found here: https://developers.google.com/youtube/v3/quickstart/python
 
 ### OAuth 2.0 setup for visiting Google API
-This application uses sensitive scopes of Google API and thus requires Google's verification for other users to operate. Currently, there is no plan for verifying this program in the near future, users will have to set up there own OAuth 2.0 client ID for this application. Here are the instruction for setting this up.
+This application uses sensitive scopes of Google API and thus requires Google's verification for other users to operate. Currently, there is no plan for verifying this program in the near future, users will have to set up their own OAuth 2.0 client ID for this application. Here are the instruction for setting this up.
 1. Go to https://console.cloud.google.com/apis/dashboard
 2. Add new project and name it as: youtube_subscription_transfer
 3. Click + ENABLE APIS AND SERVICES and Enable Youtube Data API v3 for the project
