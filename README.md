@@ -1,5 +1,5 @@
 # youtube_subscription_transfer
-youtube_subscription_transfer is a python program for subscription exporting and importing from a chosen youtube account. This program uses Youtube's Data API to extract subscription data from an authorized chosen account and saves into a local json file. Vice versa, it can import subscription data from a local json file into an authorized account.
+youtube_subscription_transfer is a python script for subscription exporting and importing from a chosen youtube account. This program uses Youtube's Data API to extract subscription data from an authorized account and saves into a local json file. Vice versa, it can import subscription data from a local json file into an authorized account.
 ## Requirements
 ### Python packages
 * google-api-python-client==1.12.8
