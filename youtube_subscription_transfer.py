@@ -102,8 +102,8 @@ def read_json(filename):
     except (IOError, FileNotFoundError) as e:
         print("file {} does not exist in json directory".format(filename))
         
-def save_json(subscriptions):
-    save_path = "./json/"+args.filename[0]
+def save_json(subscriptions, filename):
+    save_path = "./json/" + filename
     with open(save_path, "w") as f:
         json.dump(subscriptions, f)
         print("saved subscriptions as {} in json directory".format(filename))
@@ -126,7 +126,7 @@ def main():
                                    client_secrets_file="./client_secrets_file/client_id.json")
         # retrive source subscriptions
         source_subscriptions = export_subscriptions(youtube) 
-        save_json(source_subscriptions)
+        save_json(source_subscriptions, args.filename[0])
     elif args.command[0]=="import":
         source_subscriptions = read_json(args.filename[0])
         # authorize target account
